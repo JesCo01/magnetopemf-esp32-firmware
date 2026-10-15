@@ -20,7 +20,7 @@ Si el entorno Arduino CLI ya esta configurado:
 arduino-cli compile --fqbn esp32:esp32:esp32 MagnetoPEMF
 ```
 
-La configuracion actual utiliza GPIO4 para la salida y GPIO34 para la medicion de bateria. El dispositivo BLE se anuncia como `MAGNETO_TESIS`. Los comandos de consola USB `PAIR` y `UNPAIR` se aceptan con el sistema en reposo, a 115200 baudios.
+La configuracion actual utiliza GPIO4 para la salida y GPIO34 para la medicion de bateria. El dispositivo BLE se anuncia como `MAGNETO_TESIS`. La app se conecta directamente por BLE, sin comandos USB, PIN ni ventana temporal de vinculacion. La consola serie a 115200 baudios se utiliza para diagnostico. El firmware actual no exige bonding ni cifrado autenticado para acceder a la caracteristica BLE.
 
 ## Pruebas
 

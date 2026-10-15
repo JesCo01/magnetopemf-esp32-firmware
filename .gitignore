@@ -1,0 +1,27 @@
+# Archivos generados por compilacion y pruebas
+/build/
+.pio/
+__pycache__/
+*.py[cod]
+*.o
+*.obj
+*.elf
+*.bin
+*.hex
+*.map
+*.exe
+*.pdb
+*.ilk
+
+# Configuracion local y archivos temporales
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+*.tmp
+*.bak
+
+# Respaldos comprimidos
+*.rar
+*.zip
+*.7z
